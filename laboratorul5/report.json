@@ -1,0 +1,30 @@
+{
+  "requested_url": "https://cybercor.org",
+  "status_code": 200,
+  "final_url": "https://cybercor.org/",
+  "title": "CYBERCOR",
+  "ip_address": "104.21.91.71",
+  "redirect_chain": [],
+  "http_redirect_chain": [
+    {
+      "status_code": 301,
+      "from_url": "http://cybercor.org/",
+      "to_url": "https://cybercor.org/"
+    }
+  ],
+  "http_final_url": "https://cybercor.org/",
+  "security_headers": {
+    "Strict-Transport-Security": false,
+    "Content-Security-Policy": false,
+    "X-Frame-Options": true,
+    "X-Content-Type-Options": true,
+    "Referrer-Policy": true
+  },
+  "security_score": "3/5",
+  "certificate_days_left": 44,
+  "internal_links": 1,
+  "external_links": 0,
+  "disallowed_paths": [],
+  "checked_at": "2026-10-20T12:12:09.213329",
+  "errors": []
+}
