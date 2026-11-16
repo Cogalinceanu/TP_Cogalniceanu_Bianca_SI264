@@ -1,0 +1,17 @@
+﻿2c4e680 Lucrarea A: initializare depozit cu README
+5c17fa0 Lucrarea A: adaug programul salut.py
+1faafa7 Lucrarea A: ignor mediul virtual si fisierele temporare
+a749478 Lucrarea A: a doua modificare in salut.py
+05b397d Lucrarea A: restabilesc versiunea salut.py
+68cd6f2 Pornire: inventar.py stricat
+9bf7b98 Repar indentarea punctului de intrare
+b1e8425 Corectez numele variabilei pentru JSON
+15ea797 Corectez concatenarea numarului de tinte
+d69de39 Tratez serviciul lipsa
+c1ca118 Initializez grupurile de porturi
+6b1de6f Convertesc pragul in numar intreg
+d87b43b Gestionez porturile invalide
+39fae55 Returnez lista tintelor peste prag
+b6cfe3f Afisez avertismentele pentru porturi invalide
+5eeb0cd Returnez raportul JSON construit
+0cfaac7 Raportul uneltei reparate
