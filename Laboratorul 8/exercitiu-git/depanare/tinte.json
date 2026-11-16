@@ -1,0 +1,39 @@
+{
+  "tinte": [
+    {
+      "ip": "192.168.56.101",
+      "serviciu": "ssh",
+      "port": "22",
+      "valoare": 450
+    },
+    {
+      "ip": "192.168.56.102",
+      "serviciu": "http",
+      "port": "80",
+      "valoare": 1500
+    },
+    {
+      "ip": "192.168.56.103",
+      "serviciu": "http",
+      "port": "abc",
+      "valoare": 1800
+    },
+    {
+      "ip": "192.168.56.104",
+      "serviciu": "http",
+      "port": "8080",
+      "valoare": 2200
+    },
+    {
+      "ip": "192.168.56.105",
+      "serviciu": "mysql",
+      "port": "3306",
+      "valoare": 700
+    },
+    {
+      "ip": "192.168.56.106",
+      "port": "5432",
+      "valoare": 900
+    }
+  ]
+}
