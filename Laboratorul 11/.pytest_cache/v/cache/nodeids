@@ -1,0 +1,13 @@
+[
+  "arsenal/windows/test_inventar.py::test_cale_insensibila_la_litere_mari",
+  "arsenal/windows/test_inventar.py::test_egalitate_dataclass",
+  "arsenal/windows/test_inventar.py::test_evenimente_suspecte",
+  "arsenal/windows/test_inventar.py::test_explicatii",
+  "arsenal/windows/test_inventar.py::test_fisier_json_invalid",
+  "arsenal/windows/test_inventar.py::test_incarcare_capturi",
+  "arsenal/windows/test_inventar.py::test_inventar_suspecte_si_grupare",
+  "arsenal/windows/test_inventar.py::test_proces_din_temp_e_suspect",
+  "arsenal/windows/test_inventar.py::test_proces_din_windows_nu_e_suspect",
+  "arsenal/windows/test_inventar.py::test_raport_si_scor",
+  "arsenal/windows/test_inventar.py::test_roaming_e_suspect"
+]

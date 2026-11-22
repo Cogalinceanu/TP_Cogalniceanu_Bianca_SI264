@@ -1,0 +1,71 @@
+{
+  "total_procese": 7,
+  "total_procese_suspecte": 2,
+  "procese_suspecte": [
+    {
+      "pid": 3120,
+      "nume": "update.exe",
+      "user": "ana",
+      "cale": "C:\\Users\\ana\\AppData\\Local\\Temp\\update.exe"
+    },
+    {
+      "pid": 3890,
+      "nume": "svch0st.exe",
+      "user": "ana",
+      "cale": "C:\\Users\\ana\\AppData\\Roaming\\svch0st.exe"
+    }
+  ],
+  "procese_pe_utilizator": {
+    "SYSTEM": [
+      "System",
+      "svchost.exe"
+    ],
+    "ana": [
+      "explorer.exe",
+      "chrome.exe",
+      "update.exe",
+      "powershell.exe",
+      "svch0st.exe"
+    ]
+  },
+  "total_evenimente": 8,
+  "total_alarme": 5,
+  "alarme": [
+    {
+      "id": 4625,
+      "nivel": "warning",
+      "sursa": "Security",
+      "cont": "administrator",
+      "mesaj": "An account failed to log on"
+    },
+    {
+      "id": 4625,
+      "nivel": "warning",
+      "sursa": "Security",
+      "cont": "administrator",
+      "mesaj": "An account failed to log on"
+    },
+    {
+      "id": 4625,
+      "nivel": "warning",
+      "sursa": "Security",
+      "cont": "administrator",
+      "mesaj": "An account failed to log on"
+    },
+    {
+      "id": 7045,
+      "nivel": "warning",
+      "sursa": "System",
+      "cont": "SYSTEM",
+      "mesaj": "A service was installed: WinUpdateSvc"
+    },
+    {
+      "id": 1102,
+      "nivel": "critical",
+      "sursa": "Security",
+      "cont": "administrator",
+      "mesaj": "The audit log was cleared"
+    }
+  ],
+  "scor_risc": 7
+}
