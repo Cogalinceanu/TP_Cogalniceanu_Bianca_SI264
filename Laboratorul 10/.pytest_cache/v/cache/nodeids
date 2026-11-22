@@ -1,0 +1,10 @@
+[
+  "arsenal/aparare/test_detector.py::test_cli_json",
+  "arsenal/aparare/test_detector.py::test_esec_valid_si_invalid",
+  "arsenal/aparare/test_detector.py::test_fisier_inexistent",
+  "arsenal/aparare/test_detector.py::test_numarare_jurnal",
+  "arsenal/aparare/test_detector.py::test_prag_invalid",
+  "arsenal/aparare/test_detector.py::test_prag_negativ_si_bool",
+  "arsenal/aparare/test_detector.py::test_pragul_taie",
+  "arsenal/aparare/test_detector.py::test_raport_json"
+]
