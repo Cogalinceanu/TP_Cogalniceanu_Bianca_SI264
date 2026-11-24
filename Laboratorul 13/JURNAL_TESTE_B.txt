@@ -1,0 +1,151 @@
+Etapa B0: cod iesire 1
+FFF                                                                      [100%]
+=================================== FAILURES ===================================
+______________________________ test_tip_din_magic ______________________________
+
+    def test_tip_din_magic():
+        assert tip(b"\x89PNG\r\n") == "PNG"
+>       assert tip(b"%PDF-1.4") == "PDF"
+E       AssertionError: assert 'necunoscut' == 'PDF'
+E         
+E         - PDF
+E         + necunoscut
+
+test_amprente.py:11: AssertionError
+______________________________ test_amprenta_png _______________________________
+
+    def test_amprenta_png():
+>       r = amprenta_fisier(os.path.join(PROBE, "imagine.png"))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_amprente.py:16: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+amprente.py:18: in amprenta_fisier
+    date = f.read()
+           ^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <encodings.utf_8.IncrementalDecoder object at 0x7f5383dc6270>
+input = b'\x89PNG\r\n\x1a\n\x00\x00\x00\rIHDRdate-fictive-de-imagine-aici'
+final = True
+
+>   ???
+E   UnicodeDecodeError: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+
+<frozen codecs>:325: UnicodeDecodeError
+_____________________________ test_scaneaza_toate ______________________________
+
+    def test_scaneaza_toate():
+>       rez = scaneaza(PROBE)
+              ^^^^^^^^^^^^^^^
+
+test_amprente.py:22: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+amprente.py:29: in scaneaza
+    rez.append(amprenta_fisier(cale))
+               ^^^^^^^^^^^^^^^^^^^^^
+amprente.py:20: in amprenta_fisier
+    "tip": tip(date[:8]),
+           ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+head = 'PK\x03\x04cont'
+
+    def tip(head):
+        for semnatura, nume in MAGIC.items():
+>           if head.startswith(semnatura):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           TypeError: startswith first arg must be str or a tuple of str, not bytes
+
+amprente.py:11: TypeError
+=========================== short test summary info ============================
+FAILED test_amprente.py::test_tip_din_magic - AssertionError: assert 'necunoscut' == 'PDF'
+  
+  - PDF
+  + necunoscut
+FAILED test_amprente.py::test_amprenta_png - UnicodeDecodeError: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+FAILED test_amprente.py::test_scaneaza_toate - TypeError: startswith first arg must be str or a tuple of str, not bytes
+3 failed in 0.08s
+
+
+Etapa B1: cod iesire 1
+.FF                                                                      [100%]
+=================================== FAILURES ===================================
+______________________________ test_amprenta_png _______________________________
+
+    def test_amprenta_png():
+>       r = amprenta_fisier(os.path.join(PROBE, "imagine.png"))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+test_amprente.py:16: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+amprente.py:18: in amprenta_fisier
+    date = f.read()
+           ^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+self = <encodings.utf_8.IncrementalDecoder object at 0x7fded4f6bad0>
+input = b'\x89PNG\r\n\x1a\n\x00\x00\x00\rIHDRdate-fictive-de-imagine-aici'
+final = True
+
+>   ???
+E   UnicodeDecodeError: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+
+<frozen codecs>:325: UnicodeDecodeError
+_____________________________ test_scaneaza_toate ______________________________
+
+    def test_scaneaza_toate():
+>       rez = scaneaza(PROBE)
+              ^^^^^^^^^^^^^^^
+
+test_amprente.py:22: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+amprente.py:29: in scaneaza
+    rez.append(amprenta_fisier(cale))
+               ^^^^^^^^^^^^^^^^^^^^^
+amprente.py:20: in amprenta_fisier
+    "tip": tip(date[:8]),
+           ^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+head = 'PK\x03\x04cont'
+
+    def tip(head):
+        for semnatura, nume in MAGIC.items():
+>           if head.startswith(semnatura):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           TypeError: startswith first arg must be str or a tuple of str, not bytes
+
+amprente.py:11: TypeError
+=========================== short test summary info ============================
+FAILED test_amprente.py::test_amprenta_png - UnicodeDecodeError: 'utf-8' codec can't decode byte 0x89 in position 0: invalid start byte
+FAILED test_amprente.py::test_scaneaza_toate - TypeError: startswith first arg must be str or a tuple of str, not bytes
+2 failed, 1 passed in 0.06s
+
+
+Etapa B2: cod iesire 1
+.F.                                                                      [100%]
+=================================== FAILURES ===================================
+______________________________ test_amprenta_png _______________________________
+
+    def test_amprenta_png():
+        r = amprenta_fisier(os.path.join(PROBE, "imagine.png"))
+        assert r["tip"] == "PNG"
+>       assert r["sha256"] == "ea3a9848da7e6c1d"
+E       AssertionError: assert 'ea3a9848' == 'ea3a9848da7e6c1d'
+E         
+E         - ea3a9848da7e6c1d
+E         + ea3a9848
+
+test_amprente.py:18: AssertionError
+=========================== short test summary info ============================
+FAILED test_amprente.py::test_amprenta_png - AssertionError: assert 'ea3a9848' == 'ea3a9848da7e6c1d'
+  
+  - ea3a9848da7e6c1d
+  + ea3a9848
+1 failed, 2 passed in 0.05s
+
+
+Etapa B3: cod iesire 0
+...                                                                      [100%]
+3 passed in 0.03s

@@ -1,0 +1,5 @@
+[
+  "test_amprente.py::test_amprenta_png",
+  "test_amprente.py::test_scaneaza_toate",
+  "test_amprente.py::test_tip_din_magic"
+]

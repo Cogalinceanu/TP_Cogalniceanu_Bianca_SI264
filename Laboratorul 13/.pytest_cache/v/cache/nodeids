@@ -1,0 +1,5 @@
+[
+  "arsenal/forensics/test_amprente.py::test_amprenta_png",
+  "arsenal/forensics/test_amprente.py::test_scaneaza_toate",
+  "arsenal/forensics/test_amprente.py::test_tip_din_magic"
+]

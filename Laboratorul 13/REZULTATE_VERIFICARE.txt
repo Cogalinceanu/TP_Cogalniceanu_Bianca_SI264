@@ -1,0 +1,9 @@
+arhiva.zip     ZIP         e026715077436f53
+imagine.png    PNG         ea3a9848da7e6c1d
+note.txt       necunoscut  27f8884260c60ec9
+raport.pdf     PDF         9023842e09242e5d
+...                                                                      [100%]
+3 passed in 0.03s
+...                                                                      [100%]
+3 passed in 0.02s
+Toate verificarile au trecut.
